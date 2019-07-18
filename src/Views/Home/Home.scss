@@ -1,0 +1,98 @@
+.WidthClassOpen{
+    width: 100%;
+}
+
+.HomeContainer{
+
+    .CornerLeftImage{
+        position: fixed;
+        z-index: 1;
+        background: url("../../Assets/img/Home/Raiz/cornerLeft.png");
+        background-size: auto;
+        background-position: top left;
+        top: 35px;
+        left: 35px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .Open{
+        img{
+          position: fixed;
+          z-index: 2;
+          right: 35px;
+          top: 35px;
+          cursor: pointer;
+          width: 35px;
+        }
+    }
+
+    .CornerRightImage{
+        position: fixed;
+        z-index: 1;
+        background: url("../../Assets/img/Home/Raiz/cornerRight.png");
+        background-size: auto;
+        background-position: bottom right;
+        bottom: 35px;
+        right: 35px;
+        width: 200px;
+        height: 200px;
+    }
+
+    #ShowMenu{
+        width: 0%;
+        position: fixed;
+        height: 100vh;
+        display: flex;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    #CloseMenu{
+        #closebtn{
+            display: none;
+            img{
+              position: fixed;
+              z-index: 2;
+              right: 35px;
+              top: 35px;
+              cursor: pointer;
+              width: 35px;
+            }
+        }
+    }
+}
+
+@media(min-width:768px) and (max-width:1200px){
+    .HomeContainer{
+        .CornerRightImage{
+            display: none;
+        }
+
+        .CornerLeftImage{
+            width: 120px;
+            height: 120px;
+            top: 15px;
+            left: 15px;
+        }
+    }
+}
+
+@media(max-width:576px){
+    .HomeContainer{
+
+        .CornerRightImage{
+            display: none;
+        }
+
+        .CornerLeftImage{
+            width: 100px;
+            height: 100px;
+            top: 15px;
+            left: 15px;
+        }
+    }
+}
